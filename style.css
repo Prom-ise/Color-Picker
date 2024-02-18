@@ -1,0 +1,308 @@
+.contain {
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.color-pallete {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxR {
+  box-sizing: border-box;
+  border: none;
+  width: 17px;
+  height: 17px;
+  background: linear-gradient(
+    to right,
+    red 0%,
+    red 25%,
+    green 25%,
+    green 50%,
+    blue 50%,
+    blue 75%,
+    yellow 75%,
+    yellow 100%
+  );
+}
+
+.box1 {
+  box-sizing: border-box;
+  border: none;
+  width: 17px;
+  height: 17px;
+  background-color: red;
+}
+
+.box2 {
+  box-sizing: border-box;
+  border: none;
+  width: 17px;
+  height: 17px;
+  background-color: green;
+}
+
+.box3 {
+  box-sizing: border-box;
+  border: none;
+  width: 17px;
+  height: 17px;
+  background-color: blue;
+}
+
+.box4 {
+  box-sizing: border-box;
+  border: none;
+  width: 17px;
+  height: 17px;
+  background-color: yellow;
+}
+
+.box5 {
+  box-sizing: border-box;
+  border: none;
+  width: 17px;
+  height: 17px;
+  background-color: pink;
+}
+
+.box6 {
+  box-sizing: border-box;
+  border: none;
+  width: 17px;
+  height: 17px;
+  background-color: black;
+}
+
+.box7 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 17px;
+  height: 17px;
+  background-color: white;
+}
+
+.box8 {
+  box-sizing: border-box;
+  border: none;
+  width: 17px;
+  height: 17px;
+  background-color: purple;
+}
+
+.box9 {
+  box-sizing: border-box;
+  border: none;
+  width: 17px;
+  height: 17px;
+  background-color: orange;
+}
+
+.box10 {
+  box-sizing: border-box;
+  border: none;
+  width: 17px;
+  height: 17px;
+  background-color: brown;
+}
+
+.butt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  --font-color-dark: #323232;
+  --font-color-light: #fff;
+  --bg-color: #fff;
+  --main-color: #323232;
+  position: relative;
+  height: 43px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 34px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 2px 4px 4px 4px var(--main-color);
+}
+
+.option {
+  width: 80.5px;
+  height: 35px;
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.inputRandom,
+.inputOne,
+.inputTwo,
+.inputThree,
+.inputFour,
+.inputFive,
+.inputSix,
+.inputSeven,
+.inputEight,
+.inputNine,
+.inputTen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+.color {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.span {
+  color: black;
+  font-weight: 600;
+}
+.box1{
+  color: rgb(254, 2, 2);
+}
+.inputRandom:checked + .color{
+  background: linear-gradient(
+    to right,
+    red 0%,
+    red 25%,
+    green 25%,
+    green 50%,
+    blue 50%,
+    blue 75%,
+    yellow 75%,
+    yellow 100%
+  );
+  box-shadow: 2px 4px 24px 4px var(--font-color-dark);
+}
+.inputRandom:hover + .color .span{
+  background: linear-gradient(to right, red, orange, yellow, green, blue); /* Define the linear gradient with up to five colors */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Set text color to transparent */
+  display: inline-block; /* Ensure the span behaves like an inline element */
+}
+
+.inputOne:checked + .color {
+  background: red;
+  box-shadow: 2px 4px 24px 4px red;
+  transition: 0.1s ease-in-out;
+}
+
+.inputOne:hover + .color .span{
+  color: red;
+  transition: 0.3s;
+}
+
+.inputTwo:checked + .color {
+  background: green;
+  box-shadow: 2px 4px 24px 4px lime;
+  transition: 0.1s ease-in-out;
+}
+.inputTwo:hover + .color .span{
+  color: green;
+  transition: 0.3s;
+}
+
+.inputThree:checked + .color {
+  background: blue;
+  box-shadow: 2px 4px 24px 4px blue;
+  transition: 0.1s ease-in-out;
+}
+.inputThree:hover + .color .span{
+  color: blue;
+  transition: 0.3s;
+}
+
+.inputFour:checked + .color {
+  background: yellow;
+  box-shadow: 2px 4px 24px 4px yellow;
+  transition: 0.1s ease-in-out;
+}
+.inputFour:hover + .color .span{
+  color: yellow;
+  transition: 0.3s;
+}
+
+.inputFive:checked + .color {
+  background: pink;
+  box-shadow: 2px 4px 34px 4px pink;
+  transition: 0.1s ease-in-out;
+}
+.inputFive:hover + .color .span{
+  color: rgb(242, 48, 142);
+  transition: 0.3s;
+}
+
+.inputSix:checked + .color {
+  background: black;
+  transition: 0.1s ease-in-out;
+  box-shadow: 2px 4px 34px 4px grey;
+}
+.inputSix:hover + .color .span{
+  color: #323232;
+  transition: 0.3s;
+}
+
+.inputSeven:checked + .color {
+  box-shadow: 2px 4px 4px 4px var(--main-color);
+  background: white;
+  transition: 0.1s ease-in-out;
+}
+
+
+.inputEight:checked + .color {
+  background: purple;
+  box-shadow: 2px 4px 24px 10px purple;
+  transition: 0.1s ease-in-out;
+}
+.inputEight:hover + .color .span{
+  color: purple;
+  transition: 0.3s;
+}
+
+.inputNine:checked + .color {
+  background: orange;
+  box-shadow: 2px 4px 24px 4px orange;
+  transition: 0.1s ease-in-out;
+}
+.inputNine:hover + .color .span{
+  color: orange;
+  transition: 0.3s;
+}
+
+.inputTen:checked + .color {
+  background: brown;
+  box-shadow: 2px 4px 24px 4px brown;
+  transition: 0.1s ease-in-out;
+}
+.inputTen:hover + .color .span{
+  color: brown;
+  transition: 0.3s;
+}
+
+.inputOne:checked + .color .span,
+.inputTwo:checked + .color .span,
+.inputThree:checked + .color .span,
+.inputFour:checked + .color .span,
+.inputFive:checked + .color .span,
+.inputSix:checked + .color .span,
+.inputEight:checked + .color .span,
+.inputNine:checked + .color .span,
+.inputTen:checked + .color .span {
+  color: white;
+}
+
