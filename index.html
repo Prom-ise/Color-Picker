@@ -7,96 +7,131 @@
     <title>Color Picker</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body id="body" style="background-color: rgb(0, 48, 218)">
-    <div class="contain shadow-sm py-2 m-4 mx-auto rounded-4">
-        <div class="text-primary text-center">Explore Your Palette</div>
-        <!-- <div class="color-pallete gap-4">
-            <button class="boxR"></button>
-            <button class="box1"></button>
-            <button class="box2"></button>
-            <button class="box3"></button>
-            <button class="box4"></button>
-            <button class="box5"></button>
-            <button class="box6"></button>
-            <button class="box7"></button>
-            <button class="box8"></button>
-            <button class="box9"></button>
-            <button class="box10"></button>
-        </div> -->
+<body id="body">
+    <div class="contain px-3 py-2 m-4 mx-auto rounded-4 col-sm-6">
+        <div class="text-light text-center">Explore Your Palette</div>
+
+
+        <p class="mt-2">
+            <span class="text-light fw-bold"> Discover diverse sets of <span id="appear">COLORS</span>
+                with each click of the 'Change' button. </span>
+        </p>
     </div>
-    <div class="container wrapper ps-4">
+
+    <div class="container wrapper pb-1 fw-bolder options-container" id="optionsContainer">
         <div class="option">
-            <input class="inputRandom" type="radio" name="color" value="option" checked="">
+            <input class="inputRandom" type="radio" id="randomCheckbox" name="color" value="option" checked="">
             <div class="color">
                 <span class="span">Casual</span>
             </div>
         </div>
-        <div class="option">
-            <input class="inputOne" type="radio" id='redCheckbox' class="red" name="color" value="option1">
+        <div class="option" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="Red: Incorporate red for passion and attention-grabbing elements.">
+            <input class="inputOne" type="radio" id='redCheckbox' name="color" value="option1">
             <div class="color">
                 <span class="span">Red</span>
             </div>
         </div>
-        <div class="option">
+        <div class="option" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="Green: Choose green for a fresh, eco-friendly vibe.">
             <input class="inputTwo" type="radio" id="greenCheckbox" name="color" value="option2">
             <div class="color">
                 <span class="span">Green</span>
-            </div>``
+            </div>
         </div>
-        <div class="option">
+        <div class="option" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="Blue: Opt for blue to convey trust and professionalism.">
             <input class="inputThree" type="radio" id="blueCheckbox" name="color" value="option3">
             <div class="color">
                 <span class="span">Blue</span>
             </div>
         </div>
-        <div class="option">
+        <div class="option" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="Yellow: It adds energy and positivity">
             <input class="inputFour" type="radio" id="yellowCheckbox" name="color" value="option4">
             <div class="color">
                 <span class="span">Yellow</span>
             </div>
         </div>
-        <div class="option">
+        <div class="option" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="Pink: For a touch of romance and warmth.">
             <input class="inputFive" type="radio" id="pinkCheckbox" name="color" value="option5">
             <div class="color">
                 <span class="span">Pink</span>
             </div>
         </div>
-        <div class="option">
+        <div class="option" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="Black: Go for black for a sleek, elegant look">
             <input class="inputSix" type="radio" id="blackCheckbox" name="color" value="option6">
             <div class="color">
                 <span class="span">Black</span>
             </div>
         </div>
-        <div class="option">
-            <input class="inputSeven" type="radio" id="white" name="color" value="option7">
+        <div class="option" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="White: Embrace white for clarity and simplicity">
+            <input class="inputSeven" type="radio" id="whiteCheckbox" name="color" value="option7">
             <div class="color">
                 <span class="span">White</span>
             </div>
         </div>
-        <div class="option">
+        <div class="option" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="Purple: Integrate purple for a sense of luxury and creativity.">
             <input class="inputEight" type="radio" id="purpleCheckbox" name="color" value="option8">
             <div class="color">
                 <span class="span">Purple</span>
             </div>
         </div>
-        <div class="option">
-            <input class="inputNine" type="radio" id="oranCheckbox" name="color" value="option9">
+        <div class="option" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="Orange: Pick orange for creativity and excitement">
+            <input class="inputNine" type="radio" id="orangeCheckbox" name="color" value="option9">
             <div class="color">
-              <span class="span">Orange</span>
-            </div>  </div>
-            <div class="option">
-                <input class="inputTen" type="radio" id="brownChechbox" name="color" value="option10">
-                <div class="color">
-                  <span class="span">Brown</span>
-                </div>  </div>
+                <span class="span">Orange</span>
+            </div>
+        </div>
+        <div class="option" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="Brown: Consider brown for a cozy, reliable feel.">
+            <input class="inputTen" type="radio" id="brownCheckbox" name="color" value="option10">
+            <div class="color">
+                <span class="span">Brown</span>
+            </div>
+        </div>
     </div>
 
-    <div class="butt">
-        <button class="btn btn-info my-4 text-center text-light" id="button">Change</button>
+    <div class="changeColor mx-auto mt-5 px-2 py-3 rounded-4">
+        <div class="butt">
+            <button class="btn btn-light text-center text-black fw-bold" id="button">Change</button>
+        </div>
+
+        <div class="text-light fw-bold copied rounded-3 w-50 mx-auto mt-3 text-center animate__animated animate__rubberBand  p-2 "
+            style="display: none;" id="copy"><i
+                class="animate__animated animate__bounce animate__repeat-2 me-2 fas fa-check-circle correct-icon "></i>
+            <span class="co">Text</span> <span>Copied</span> <span class="co">to clipboard!</span></div>
+
+        <div class="rgb text-center fw-bold fs-3 text-light" id="optionContainer"><label class="font"
+                for="redInput">rgb</label>(<span class="font" id="show" data-bs-toggle="tooltip"
+                data-bs-placement="bottom" data-bs-title="Click to customize according to your preference."
+                contenteditable="true">...</span>
+            <span>,</span>
+            <span class="font" id="showy" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Click to customize according to your preference." contenteditable="true">...</span>
+            <span>,</span>
+            <span class="font" id="shower" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Click to customize according to your preference." contenteditable="true">..</span>);<i
+                id="copyButton" class="ms-2 far fa-copy" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="COPY"></i>
+        </div>
     </div>
-    <div class="text-center">RGB (<span id="show">...</span>, <span id="showy">...</span>, <span id="shower">...</span>)</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 

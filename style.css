@@ -2,20 +2,18 @@
   justify-content: center;
   align-items: center;
   width: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; 
+  box-shadow: 2px 4px 4px 4px bla;
 }
-
-.color-pallete {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.boxes{
+  display: none;
 }
-
 .boxR {
   box-sizing: border-box;
   border: none;
-  width: 17px;
-  height: 17px;
+  width: 27px;
+  height: 27px;
   background: linear-gradient(
     to right,
     red 0%,
@@ -29,83 +27,83 @@
   );
 }
 
-.box1 {
+.box1{
   box-sizing: border-box;
   border: none;
-  width: 17px;
-  height: 17px;
+  width: 27px;
+  height: 27px;
   background-color: red;
 }
 
 .box2 {
   box-sizing: border-box;
   border: none;
-  width: 17px;
-  height: 17px;
+  width: 27px;
+  height: 27px;
   background-color: green;
 }
 
 .box3 {
   box-sizing: border-box;
   border: none;
-  width: 17px;
-  height: 17px;
+  width: 27px;
+  height: 27px;
   background-color: blue;
 }
 
 .box4 {
   box-sizing: border-box;
   border: none;
-  width: 17px;
-  height: 17px;
+  width: 27px;
+  height: 27px;
   background-color: yellow;
 }
 
 .box5 {
   box-sizing: border-box;
   border: none;
-  width: 17px;
-  height: 17px;
+  width: 27px;
+  height: 27px;
   background-color: pink;
 }
 
 .box6 {
   box-sizing: border-box;
   border: none;
-  width: 17px;
-  height: 17px;
+  width: 27px;
+  height: 27px;
   background-color: black;
 }
 
 .box7 {
   box-sizing: border-box;
   border: 1px solid black;
-  width: 17px;
-  height: 17px;
+  width: 27px;
+  height: 27px;
   background-color: white;
 }
 
 .box8 {
   box-sizing: border-box;
   border: none;
-  width: 17px;
-  height: 17px;
+  width: 27px;
+  height: 27px;
   background-color: purple;
 }
 
 .box9 {
   box-sizing: border-box;
   border: none;
-  width: 17px;
-  height: 17px;
+  width: 27px;
+  height: 27px;
   background-color: orange;
 }
 
 .box10 {
   box-sizing: border-box;
   border: none;
-  width: 17px;
-  height: 17px;
+  width: 27px;
+  height: 27px;
   background-color: brown;
 }
 
@@ -127,6 +125,8 @@
   border-radius: 34px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   box-shadow: 2px 4px 4px 4px var(--main-color);
 }
 
@@ -168,9 +168,109 @@
   align-items: center;
 }
 
+.coloRed{
+  background-color: red;
+  box-shadow: 2px 4px 24px 4px red;
+  font-weight: 800;
+  padding: 3px 20px;
+  height: 100%;
+  color: white;
+  border-radius: 20px;
+  
+}
+.colorBlue{
+  background-color: blue;
+  box-shadow: 2px 4px 24px 4px blue;
+  font-weight: 800;
+  padding: 3px 20px;
+  height: 100%;
+  color: white;
+  border-radius: 20px;
+  
+}
+.colorGreen{
+  background-color: green;
+  box-shadow: 2px 4px 24px 4px lime;
+  font-weight: 800;
+  padding: 3px 20px;
+  height: 100%;
+  color: white;
+  border-radius: 20px;
+  
+}
+.colorYellow{
+  background-color: yellow;
+  box-shadow: 2px 4px 24px 4px yellow;
+  font-weight: 800;
+  padding: 3px 20px;
+  height: 100%;
+  color: white;
+  border-radius: 20px;
+  
+}
+.colorPink{
+  background-color: rgb(253, 17, 182);
+  box-shadow: 2px 4px 24px 4px rgb(253, 17, 182);
+  font-weight: 800;
+  padding: 3px 20px;
+  height: 100%;
+  color: white;
+  border-radius: 20px;
+  
+}
+.colorBlack{
+  background-color: black;
+  box-shadow: 2px 4px 24px 4px grey;
+  font-weight: 800;
+  padding: 3px 20px;
+  height: 100%;
+  color: white;
+  border-radius: 20px;
+  
+}
+.colorWhite{
+  background-color: whitesmoke;
+  box-shadow: 2px 4px 24px 4px whitesmoke;
+  font-weight: 800;
+  padding: 3px 20px;
+  height: 100%;
+  color: Black;
+  border-radius: 20px;
+  
+}
+.colorOrange{
+  background-color: orange;
+  box-shadow: 2px 4px 24px 4px orange;
+  font-weight: 800;
+  padding: 3px 20px;
+  height: 100%;
+  color: white;
+  border-radius: 20px;
+  
+}
+.colorPurple{
+  background-color: purple;
+  box-shadow: 2px 4px 24px 4px purple;
+  font-weight: 800;
+  padding: 3px 20px;
+  height: 100%;
+  color: white;
+  border-radius: 20px;
+  
+}
+.colorBrown{
+  background-color: brown;
+  box-shadow: 2px 4px 24px 4px orangered;
+  font-weight: 800;
+  padding: 3px 20px;
+  height: 100%;
+  color: white;
+  border-radius: 20px;
+  
+}
 .span {
   color: black;
-  font-weight: 600;
+  font-weight: 800;
 }
 .box1{
   color: rgb(254, 2, 2);
@@ -191,9 +291,9 @@
 }
 .inputRandom:hover + .color .span{
   background: linear-gradient(to right, red, orange, yellow, green, blue); /* Define the linear gradient with up to five colors */
-  -webkit-background-clip: text; /* Clip the background to the text */
-  color: transparent; /* Set text color to transparent */
-  display: inline-block; /* Ensure the span behaves like an inline element */
+  -webkit-background-clip: text; 
+  color: transparent; 
+  display: inline-block; 
 }
 
 .inputOne:checked + .color {
@@ -305,4 +405,53 @@
 .inputTen:checked + .color .span {
   color: white;
 }
+.contain, .changeColor{
+  box-shadow: 20px 20px 60px #c5c5c5;
+}
 
+.copied{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.changeColor{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 500px;
+}
+.rgb{
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+  .contain{
+    width: 370px;
+  }
+  .font{
+    font-size: 25px;
+    margin-top: 22px;
+  }
+  .changeColor{
+    width: 300px;
+  }
+  .boxes{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 15px;
+  }
+  .wrapper{
+   height: 130px;
+  }
+ .container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+ }
+ .co{
+  display: none;
+ }
+ /* .option{
+  flex: 1rem 0 5rem;
+ } */
+}
